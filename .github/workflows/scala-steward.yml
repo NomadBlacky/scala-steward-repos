@@ -15,8 +15,5 @@ jobs:
       - name: Launch Scala Steward
         uses: scala-steward-org/scala-steward-action@v2
         with:
-          github-token: ${{ secrets.ADMIN_GITHUB_TOKEN }}
+          github-token: ${{ secrets.BOT_GITHUB_TOKEN }}
           repos-file: repos.md
-          # https://github.community/t/github-actions-bot-email-address/17204/6
-          author-name: github-actions[bot]
-          author-email: 41898282+github-actions[bot]@users.noreply.github.com
