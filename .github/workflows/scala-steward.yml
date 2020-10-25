@@ -17,3 +17,5 @@ jobs:
         with:
           github-token: ${{ secrets.BOT_GITHUB_TOKEN }}
           repos-file: repos.md
+          author-name: bot-nomadblacky
+          author-email: 73433039+bot-nomadblacky@users.noreply.github.com
