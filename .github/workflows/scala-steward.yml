@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Launch Scala Steward
-        uses: NomadBlacky/scala-steward-action@cdd2649f4c798c26adac85475f5392e6e83980b4
+        uses: scala-steward-org/scala-steward-action@v2
         with:
           github-token: ${{ secrets.BOT_GITHUB_TOKEN }}
           repos-file: repos.md
