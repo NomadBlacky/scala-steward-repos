@@ -16,7 +16,7 @@ jobs:
       - id: create_token
         uses: tibdex/github-app-token@v2
         with:
-          app_id: 109256219
+          app_id: ${{ secrets.APP_ID }}
           private_key: ${{ secrets.APP_PRIVATE_KEY }}
 
       - name: Launch Scala Steward
@@ -26,5 +26,5 @@ jobs:
           repos-file: repos.md
           author-name: bot-nomadblacky[bot]
           author-email: 109256219+bot-nomadblacky[bot]@users.noreply.github.com
-          github-app-id: 109256219
+          github-app-id: ${{ secrets.APP_ID }}
           github-app-key: ${{ secrets.APP_PRIVATE_KEY }}
