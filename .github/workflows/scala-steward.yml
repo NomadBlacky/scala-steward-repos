@@ -12,10 +12,17 @@ jobs:
     name: Launch Scala Steward
     steps:
       - uses: actions/checkout@v2
+
+      - id: create_token
+        uses: tibdex/github-app-token@v2
+        with:
+          app_id: ${{ secrets.APP_ID }}
+          private_key: ${{ secrets.APP_PRIVATE_KEY }}
+
       - name: Launch Scala Steward
         uses: scala-steward-org/scala-steward-action@v2
         with:
-          github-token: ${{ secrets.BOT_GITHUB_TOKEN }}
+          github-token: ${{ steps.create_token.outputs.token }}
           repos-file: repos.md
           author-name: bot-nomadblacky
-          author-email: 73433039+bot-nomadblacky@users.noreply.github.com
+          author-email: ${{ secrets.APP_ID }}+bot-nomadblacky@users.noreply.github.com
