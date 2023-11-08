@@ -26,5 +26,3 @@ jobs:
           repos-file: repos.md
           author-name: bot-nomadblacky[bot]
           author-email: 109256219+bot-nomadblacky[bot]@users.noreply.github.com
-          github-app-id: ${{ secrets.APP_ID }}
-          github-app-key: ${{ secrets.APP_PRIVATE_KEY }}
