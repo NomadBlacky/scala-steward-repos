@@ -1,2 +1,3 @@
 - NomadBlacky/s.g8
 - NomadBlacky/iidx-difficulty-table-checker
+- NomadBlacky/scalatest-otel-reporter
